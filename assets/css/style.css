@@ -1,0 +1,58 @@
+body {
+    font-family: roboto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    border: solid 1px rgb(34, 29, 29);
+    border-radius: 9%;
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #61c4db;
+}
+
+.imagen {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.eleccionColor {
+    margin-top: 20px;
+}
+
+.boton {
+    padding-bottom: 20px;
+}
+
+.button-card {
+    background-color: rgb(29, 7, 230);
+    color: bisque;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.color {
+    display: flex;
+    align-items: center;
+}
+.colorDiv {
+    padding: 10px;
+    border: solid 1px;
+    border-radius:100%;
+}

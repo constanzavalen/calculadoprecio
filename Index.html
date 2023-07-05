@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculo de Producto</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="imgc-ard">
+        <img class="imagen" src="./assets/img/Laptop.jpg" alt="">
+      </div> 
+      <div>
+        <h4>Laptop Huawei</h4>
+      </div> 
+      <div>
+        <input type="number"class="cantidad" min="1" placeholder="cantidad"/>
+      </div>
+      <div>
+        <input type="text" class="eleccionColor" placeholder="color"/>
+      </div>
+      <div>
+        <p>Precio: $ <span class="precio-real">290000</span></p>
+      </div>
+      <div class="boton">
+        <button class="button-card" onclick="
+        const precio = 290000
+        const cantidadInput = document.querySelector('.cantidad').value;
+        const colorInput = document.querySelector('.eleccionColor').value;
+
+        const precioFinal = document.querySelector('.valor-total');
+        const cantidadFinal = document.querySelector('.cantidad-total');
+        const colorFinal = document.querySelector('.colorDiv');
+
+        const precioFinalCalculado = cantidadInput * precio
+     
+        precioFinal.innerHTML = precioFinalCalculado.toLocaleString();
+        cantidadFinal.innerHTML = cantidadInput;
+        colorFinal.style.backgroundColor = colorInput;
+               
+          ">Calcular Total</button>
+      </div>    
+    </div>
+    <div class="section">
+      <p>Total: $<span class="valor-total">0</span></p>
+      <p>Cantidad: <span class="cantidad-total">0</span></p>
+      <div class="color">
+        <p>color:</p>
+        <div class="colorDiv"></div>
+      </div>
+      
+
+    
+    </div>
+  </div>
+   
+</body>
+</html>
